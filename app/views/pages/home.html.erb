@@ -1,2 +1,137 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<section id="home-banner">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+    <div class="container">
+      <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
+      <p>Change your life and learn to code at one of our campuses around the world.</p>
+      <a class="btn btn-flat" href="#">Apply now</a>
+    </div>
+  </div>
+</section>
+
+<section id="home-description">
+  <div class="container">
+    <div class="title-section">
+      <h3> Le plus grand réseau de café-coworking en Europe ! </h3>
+    </div>
+    <div>
+      <p>D’une heure à plusieurs jours, nous avons conçu Anticafé pour vous offrir un espace adapté au (télé)travail ! Que vous soyez seul ou en groupe, nos espaces sont accessibles aussi facilement que votre café du coin.</p>
+      <p> Exit les réseaux sociaux virtuels, Anticafé se place comme un vrai réseau social, humain et physique. Notre plus grande fierté : voir des équipes se créer, des projets naitre et des rêves se réaliser chez nous !</p>
+    </div>
+    <div>
+      <%= link_to "Rejoignez-nous!", new_user_registration_path, class: "btn btn-flat" %>
+    </div>
+  </div>
+</section>
+
+<section id="home-offers">
+  <div class="container">
+    <div class="title-section">
+      <h3> Découvre nos offres </h3>
+    </div>
+    <div>
+      <div class="cards-offers">
+        <div class="card-offers">
+          <div>
+            <%= image_tag "coworking.jpg", class: "card-offers-img" %>
+          </div>
+          <div class="card-offers-content">
+            <div class="card-offers-title">
+              <h5>Café-coworking – (télé)travaillez en toute flexibilité</h5>
+            </div>
+            <div class="card-offers-description">
+              <p>Ici vous ne payez que le temps passé, tous les services sont compris. Venez quand vous le voulez ou jouez la sécurité en réservant en ligne.</p>
+            </div>
+            <div class="card-offers-price">
+              <p>Tarifs : 6€/heure ou 26€/journée.</p>
+            </div>
+            <%= link_to "je réserve ma place !", "#", class:"btn btn-flat" %>
+          </div>
+        </div>
+
+        <div class="card-offers">
+          <div>
+            <%= image_tag "conference.jpg", class: "card-offers-img" %>
+          </div>
+          <div class="card-offers-content">
+            <div class="card-offers-title">
+              <h5>Co-meeting – vos séminaires sur mesure</h5>
+            </div>
+            <div class="card-offers-description">
+              <p>De 10 à 100 personnes, physiques ou hybrides, nous assurons vos événements sur mesure, de la restauration à l’animation : on s’occupe de tout.</p>
+            </div>
+            <div class="card-offers-price">
+              <p>Tarifs : à partir de 49€ht par personne</p>
+            </div>
+            <%= link_to "j'organise mon évènement !", "#", class:"btn btn-flat" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="home-why-us">
+  <div class="container">
+    <div class="cards-why-us">
+      <div class="card-why-us">
+        <div>
+          <i class="fa-solid fa-mug-saucer card-why-us-icon"></i>
+        </div>
+        <div class="card-why-us-content">
+          <h5>Boissons & encas</h5>
+          <p>Café de spécialité torréfié à Paris par Coutume, thé sélectionné par Kusmi, boissons gourmandes faites maison, fruits et petits encas</p>
+        </div>
+      </div>
+
+      <div class="card-why-us">
+        <div>
+          <i class="fa-solid fa-print card-why-us-icon"></i>
+        </div>
+        <div class="card-why-us-content">
+          <h5>Équipements de travail</h5>
+          <p>WiFi haut débit, imprimantes & scanneurs, paperboards, projecteurs & écrans</p>
+        </div>
+      </div>
+
+      <div class="card-why-us">
+        <div>
+          <i class="fa-solid fa-comments card-why-us-icon"></i>
+        </div>
+        <div class="card-why-us-content">
+          <h5>Salles de réunions et coins confidentiels</h5>
+          <p>Des espaces isolés pour une visio ou une réunion d’équipe</p>
+        </div>
+      </div>
+
+      <div class="card-why-us">
+        <div>
+          <i class="fa-solid fa-heart card-why-us-icon"></i>
+        </div>
+        <div class="card-why-us-content">
+          <h5>Baristas bienveillants</h5>
+          <p>Une équipe experte en caféologie et passionnée pour répondre à vos besoins</p>
+        </div>
+      </div>
+
+      <div class="card-why-us">
+        <div>
+          <i class="fa-solid fa-clock card-why-us-icon"></i>
+        </div>
+        <div class="card-why-us-content">
+          <h5>Flexibilité</h5>
+          <p>Des espaces accessibles aussi facilement que votre café du coin, 7/7 avec ou sans réservation</p>
+        </div>
+      </div>
+
+      <div class="card-why-us">
+        <div>
+          <i class="fa-solid fa-fire-flame-simple card-why-us-icon"></i>
+        </div>
+        <div class="card-why-us-content">
+          <h5>Communauté</h5>
+          <p>Freelances, start-ups et grands groupes constituent déjà notre communauté de plus de 40.000 personnes. Rejoignez-les !</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
