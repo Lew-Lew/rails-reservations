@@ -1,3 +1,30 @@
-<% @coworkings.each do |coworking| %>
-  <%= coworking.name %>
-<% end %>
+<section>
+  <div class="container">
+    map
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cards-coworkings">
+      <% @coworkings.each do | coworking |  %>
+        <div class="card-coworking">
+          <div>
+            <%= link_to coworking_path(coworking) do %>
+               <%= image_tag "coworking.jpg", class: "card-offers-img" %>
+            <% end %>
+          </div>
+          <div class="card-coworking-content">
+            <div class="card-coworking-title">
+
+              <h5><%= link_to coworking.name, coworking_path(coworking)  %></h5>
+            </div>
+            <div>
+              <p><%= coworking.address %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
